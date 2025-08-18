@@ -10,6 +10,17 @@ https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
 
 Note: The project will use Yarn as the package manager
 
+Installations:
+
+- Install the [latest version of node](https://nodejs.org/en/download)
+- Install [yarn for mac](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) or [yarn for windows](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
+
+Project package installation:
+
+```bash
+yarn install
+```
+
 Running the development server:
 
 ```bash
@@ -17,10 +28,6 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
