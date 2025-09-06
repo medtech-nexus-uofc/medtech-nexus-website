@@ -5,6 +5,11 @@
   --foreground: #171717;
 }
 
+@theme {
+  --font-assistant: var(--font-assistant), sans-serif;
+  --font-funnel-display: var(--font-funnel-display), serif;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
