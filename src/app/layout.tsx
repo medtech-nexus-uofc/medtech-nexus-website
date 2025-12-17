@@ -18,6 +18,14 @@ const funnel_display = Funnel_Display({
 export const metadata: Metadata = {
   title: "MedTech Nexus",
   description: "The Medicine and Technology Nexus",
+  icons: [
+    {
+      rel: "icon",
+      type: "image/ico",
+      sizes: "32x32",
+      url: "/favicon.ico",
+    },
+  ],
 };
 
 export default function RootLayout({
