@@ -1,17 +1,20 @@
 import type { Metadata } from "next";
 import { Assistant, Funnel_Display } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const assistant = Assistant({
   variable: "--font-assistant",
   subsets: ["latin"],
-  weight: "500",
+  weight: ["400", "600", "700"],
   display: "swap",
 });
 
 const funnel_display = Funnel_Display({
   variable: "--font-funnel-display",
   subsets: ["latin"],
+  weight: ["400", "600", "700"],
   display: "swap",
 });
 
@@ -38,7 +41,13 @@ export default function RootLayout({
       lang="en"
       className={`${assistant.variable} ${funnel_display.variable}`}
     >
-      <body className="font-assistant antialiased">{children}</body>
+      <body className="font-assistant antialiased">
+        <div className="flex h-screen min-h-screen flex-col">
+          <Navbar />
+          <div className="my-5 flex-1">{children}</div>
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }

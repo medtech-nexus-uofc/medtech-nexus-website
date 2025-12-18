@@ -10,10 +10,11 @@
   --color-baby-blue: #e1e9ea;
   --color-pale-blue: #c7d9dd;
   --color-deep-ice-blue: #36a0c3;
+  --color-navy-blue: #0e507b;
   --color-pistachio: #cae3da;
   --color-sea-green: #57a6a1;
   --color-lavender: #bbb0d9;
-  --color-royal-purple: #9272ec;
+  --color-royal-purple: #a481f5;
   --color-bocchi-pink: #febbcc;
   --color-rose-pink: #f67280;
 }
@@ -28,6 +29,7 @@
   --color-baby-blue: var(--color-baby-blue);
   --color-pale-blue: var(--color-pale-blue);
   --color-deep-ice-blue: var(--color-deep-ice-blue);
+  --color-navy-blue: var(--color-navy-blue);
   --color-pistachio: var(--color-pistachio);
   --color-sea-green: var(--color-sea-green);
   --color-lavender: var(--color-lavender);
@@ -69,5 +71,27 @@ body {
 
   ::-webkit-details-marker {
     display: none;
+  }
+}
+
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 3px 3px 4px (0, 0, 0, 0.35);
+  }
+
+  .text-shadow-xl {
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+  }
+
+  .text-shadow-none {
+    text-shadow: none;
   }
 }
