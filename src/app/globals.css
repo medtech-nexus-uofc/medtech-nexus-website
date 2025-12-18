@@ -3,11 +3,37 @@
 :root {
   --background: #fff4ec;
   --foreground: #171717;
+
+  /* Custom colors */
+  --color-bone-white: #fff4ec;
+  --color-sad-beige: #e5e0da;
+  --color-baby-blue: #e1e9ea;
+  --color-pale-blue: #c7d9dd;
+  --color-deep-ice-blue: #36a0c3;
+  --color-pistachio: #cae3da;
+  --color-sea-green: #57a6a1;
+  --color-lavender: #bbb0d9;
+  --color-royal-purple: #9272ec;
+  --color-bocchi-pink: #febbcc;
+  --color-rose-pink: #f67280;
 }
 
 @theme {
   --font-assistant: var(--font-assistant), sans-serif;
   --font-funnel-display: var(--font-funnel-display), serif;
+
+  /* Add colors to theme */
+  --color-bone-white: var(--color-bone-white);
+  --color-sad-beige: var(--color-sad-beige);
+  --color-baby-blue: var(--color-baby-blue);
+  --color-pale-blue: var(--color-pale-blue);
+  --color-deep-ice-blue: var(--color-deep-ice-blue);
+  --color-pistachio: var(--color-pistachio);
+  --color-sea-green: var(--color-sea-green);
+  --color-lavender: var(--color-lavender);
+  --color-royal-purple: var(--color-royal-purple);
+  --color-bocchi-pink: var(--color-bocchi-pink);
+  --color-rose-pink: var(--color-rose-pink);
 }
 
 @theme inline {
@@ -25,4 +51,23 @@
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #2e3842;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #cccccc;
+  }
+
+  ::-webkit-details-marker {
+    display: none;
+  }
 }
