@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="bg-baby-blue flex flex-row justify-between py-1">
+    <div className="bg-baby-blue sticky top-0 z-10 flex flex-row justify-between py-1 drop-shadow-md">
       <Link href="/">
         <Image
           src="/favicon.ico"

@@ -3,13 +3,16 @@ export default function Footer() {
   return (
     <div className="bg-baby-blue flex flex-col items-center justify-center gap-1 py-3">
       <div className="flex flex-row items-center justify-center gap-2 lg:gap-5">
-        <Image
-          src="/svgs/icons/instagram.png"
-          alt="Instagram Logo"
-          width={50}
-          height={50}
-          className="scale-50 hover:scale-[55%] lg:scale-75 lg:hover:scale-[80%]"
-        />
+        <a href="https://www.instagram.com/uofcmedtech_nexus/">
+          <Image
+            src="/svgs/icons/instagram.png"
+            alt="Instagram Logo"
+            width={50}
+            height={50}
+            className="scale-50 hover:scale-[55%] lg:scale-75 lg:hover:scale-[80%]"
+          />
+        </a>
+
         <Image
           src="/svgs/icons/discord.png"
           alt="Discord Logo"

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Loading() {
   return (
-    <div className="flex h-full flex-col items-center justify-center gap-5">
+    <div className="fixed inset-0 flex flex-col items-center justify-center gap-5">
       <Image
         src="/favicon.ico"
         alt="MedTech Logo"
