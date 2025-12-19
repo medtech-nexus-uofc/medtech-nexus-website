@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <div className="bg-baby-blue flex flex-col items-center justify-center gap-1 py-3">
-      <div className="flex flex-row items-center justify-center gap-5">
+      <div className="flex flex-row items-center justify-center gap-2 lg:gap-5">
         <Image
           src="/svgs/icons/instagram.png"
           alt="Instagram Logo"
