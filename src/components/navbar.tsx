@@ -8,7 +8,7 @@ export default function Navbar() {
         <Image
           src="/favicon.ico"
           alt="MedTech Logo"
-          width={60}
+          width={75}
           height={40}
           className="ml-2 hover:scale-105"
         />

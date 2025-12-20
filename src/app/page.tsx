@@ -55,7 +55,7 @@ export default function Home() {
           <div className="bg-lavender flex h-32 w-4/5 flex-row items-center justify-between rounded-xl px-8 md:px-2 lg:px-8">
             <div className="flex flex-col">
               <p className="font-funnel-display text-5xl font-bold text-white">
-                20
+                43
               </p>
               <p className="font-funnel-display text-xl font-bold text-white md:text-lg lg:text-2xl">
                 Members
@@ -73,7 +73,7 @@ export default function Home() {
           <div className="bg-lavender flex h-32 w-4/5 flex-row items-center justify-between rounded-xl px-8 md:px-2 lg:px-8">
             <div className="flex flex-col">
               <p className="font-funnel-display text-5xl font-bold text-white">
-                5
+                1
               </p>
               <p className="font-funnel-display text-xl font-bold text-white md:text-lg lg:text-2xl">
                 Events

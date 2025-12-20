@@ -13,34 +13,43 @@ export default function Footer() {
           />
         </a>
 
-        <Image
-          src="/svgs/icons/discord.png"
-          alt="Discord Logo"
-          width={45}
-          height={30}
-          className="scale-50 hover:scale-[55%] lg:scale-75 lg:hover:scale-[80%]"
-        />
-        <Image
-          src="/svgs/icons/linkedin.png"
-          alt="LinkedIn Logo"
-          width={50}
-          height={50}
-          className="scale-[35%] hover:scale-[40%] lg:scale-[55%] lg:hover:scale-[60%]"
-        />
-        <Image
-          src="/svgs/icons/linktree.png"
-          alt="Linktree Logo"
-          width={50}
-          height={50}
-          className="scale-[35%] hover:scale-[40%] lg:scale-[55%] lg:hover:scale-[60%]"
-        />
-        <Image
-          src="/svgs/icons/github.png"
-          alt="Github Logo"
-          width={50}
-          height={50}
-          className="scale-50 hover:scale-[55%] lg:scale-75 lg:hover:scale-[80%]"
-        />
+        <a href="https://discord.gg/XPx4SzrbUF">
+          <Image
+            src="/svgs/icons/discord.png"
+            alt="Discord Logo"
+            width={45}
+            height={30}
+            className="scale-50 hover:scale-[55%] lg:scale-75 lg:hover:scale-[80%]"
+          />
+        </a>
+
+        <a href="https://www.linkedin.com/company/medtech-nexus-uofc/posts/?feedView=all">
+          <Image
+            src="/svgs/icons/linkedin.png"
+            alt="LinkedIn Logo"
+            width={50}
+            height={50}
+            className="scale-[35%] hover:scale-[40%] lg:scale-[55%] lg:hover:scale-[60%]"
+          />
+        </a>
+        <a href="https://linktr.ee/medtech.nexus?brid=Eo8sCPgphVclGmDyuPzmuA">
+          <Image
+            src="/svgs/icons/linktree.png"
+            alt="Linktree Logo"
+            width={50}
+            height={50}
+            className="scale-[35%] hover:scale-[40%] lg:scale-[55%] lg:hover:scale-[60%]"
+          />
+        </a>
+        <a href="https://github.com/medtech-nexus-uofc">
+          <Image
+            src="/svgs/icons/github.png"
+            alt="Github Logo"
+            width={50}
+            height={50}
+            className="scale-50 hover:scale-[55%] lg:scale-75 lg:hover:scale-[80%]"
+          />
+        </a>
       </div>
       <h1 className="text-navy-blue/40 text-sm md:text-base lg:text-lg">
         Copyright @ The Medicine and Technology Nexus
