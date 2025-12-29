@@ -44,9 +44,7 @@ export default function RootLayout({
       <body className="font-assistant antialiased">
         <div className="flex min-h-screen flex-col">
           <Navbar />
-          <div className="my-8 flex flex-1 items-center justify-center">
-            {children}
-          </div>
+          <div className="my-8 flex-1">{children}</div>
           <Footer />
         </div>
       </body>

@@ -1,0 +1,16 @@
+<svg width="130" height="162" viewBox="0 0 130 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y="142.657" width="128" height="17.589" fill="#C7D9DD" stroke="black" stroke-width="2"/>
+<rect x="25.9315" y="96.3557" width="69.2329" height="8.68493" fill="#C7D9DD" stroke="black" stroke-width="2"/>
+<path d="M97.0548 116.726C121.168 85.9131 124.879 84.3869 115.271 60.8241C111.846 52.4243 103.926 46.6948 94.9032 45.7614L83.6986 44.6023" stroke="#C7D9DD" stroke-width="15"/>
+<path d="M95.0787 105.26L117.543 142.438H63.3287V105.26H95.0787Z" fill="#C7D9DD" stroke="black" stroke-width="2"/>
+<path d="M104.178 121.178C128.68 91.6905 134.273 81.8531 121.218 54.017C119.206 49.7265 115.829 46.2276 111.741 43.831L107.585 41.3947C104.886 39.8123 101.913 38.7507 98.8221 38.2651L88.1507 36.5886" stroke="black" stroke-width="2"/>
+<path d="M96 106.5C116.33 77.5685 115.221 82.8701 108.553 65.2903C106.475 59.8092 102.271 55.3256 96.7614 53.3223C95.2599 52.7763 93.6951 52.4233 92.1045 52.2719L84 51.5" stroke="black" stroke-width="2"/>
+<rect x="0.688762" y="1.23515" width="12.8027" height="12.5771" transform="matrix(0.96196 0.273191 -0.273198 0.961958 61.1612 52.7143)" fill="#C7D9DD" stroke="black" stroke-width="2"/>
+<rect width="11.2136" height="0.883496" transform="matrix(0.960852 0.27706 -0.277067 0.960851 59.6658 63.4358)" fill="#012E55"/>
+<rect x="0.688762" y="1.23515" width="17.2474" height="18.2635" transform="matrix(0.96196 0.273191 -0.273198 0.961958 73.4506 3.71356)" fill="#C7D9DD" stroke="black" stroke-width="2"/>
+<rect x="0.688762" y="1.23515" width="26.7012" height="31.8183" transform="matrix(0.96196 0.273191 -0.273198 0.961958 63.5815 20.1257)" fill="#C7D9DD" stroke="black" stroke-width="2"/>
+<rect width="24.7241" height="3.76157" transform="matrix(0.960852 0.27706 -0.277067 0.960851 71.3084 0.494385)" fill="black"/>
+<circle cx="104" cy="49" r="12" fill="#C7D9DD" stroke="black" stroke-width="2"/>
+<circle cx="104" cy="48.9999" r="4.57143" fill="#C7D9DD" stroke="black" stroke-width="2"/>
+<circle cx="85.2329" cy="121.233" r="5.73288" fill="#D1D1D1" stroke="black"/>
+</svg>

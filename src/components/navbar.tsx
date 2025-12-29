@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="bg-baby-blue flex flex-row justify-between py-1">
+    <div className="bg-baby-blue sticky top-0 z-10 flex flex-row justify-between py-1 drop-shadow-md">
       <Link href="/">
         <Image
           src="/favicon.ico"
           alt="MedTech Logo"
-          width={60}
+          width={75}
           height={40}
           className="ml-2 hover:scale-105"
         />
