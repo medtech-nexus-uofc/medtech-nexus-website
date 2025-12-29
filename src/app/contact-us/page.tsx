@@ -83,7 +83,7 @@ export default function Contact() {
             />
 
             {/* Submit Button Container (Align right) */}
-            <div className="relative flex justify-end">
+            <div className="relative flex justify-center md:justify-end">
               {/* The button needs to visually sit on top of the arrow 
                  and have that 3D 'pressed' look style 
                */}
