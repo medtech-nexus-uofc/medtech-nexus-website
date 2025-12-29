@@ -19,8 +19,8 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="flex w-full flex-col items-center justify-center gap-10 lg:mb-10 lg:w-9/10 lg:flex-row xl:mt-10 xl:w-3/4 2xl:w-1/2">
-        <div className="bg-bocchi-pink relative my-5 flex h-full w-4/5 flex-col items-center justify-center gap-4 rounded-xl p-4 lg:w-2/3 2xl:gap-3">
+      <div className="flex w-full flex-col items-center justify-center gap-10 lg:mb-10 lg:w-9/10 lg:flex-row xl:mt-10 xl:w-3/4 2xl:w-3/5">
+        <div className="bg-bocchi-pink relative my-5 flex h-full w-4/5 flex-col items-center justify-center gap-4 rounded-xl p-4 lg:w-2/3 2xl:gap-4">
           <h1 className="text-rose-pink font-funnel-display text-center text-3xl font-bold text-shadow-sm md:text-5xl">
             WHAT WE DO
           </h1>
