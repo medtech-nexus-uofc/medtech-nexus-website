@@ -184,7 +184,7 @@ export default function Events() {
             x2="376"
             y2="280"
             stroke="#B4D1CC"
-            stroke-width="10"
+            strokeWidth="10"
           />
           <rect
             x="231"
