@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="-my-8 flex flex-col items-center justify-center gap-5 md:gap-10">
-      <div className="bg-pistachio flex max-h-[50vh] min-h-[50vh] w-full flex-col items-center justify-center gap-5 xl:h-screen xl:max-h-none xl:gap-14">
+      <div className="animate-gradient from-pistachio to-pale-blue flex max-h-[50vh] min-h-[50vh] w-full flex-col items-center justify-center gap-5 bg-gradient-to-r xl:h-screen xl:max-h-none xl:gap-14">
         <div className="relative flex h-48 max-h-64 w-3/4 items-center justify-center">
           <Image
-            src="/images/medtech_logo_horizontal.png"
+            src="/svgs/medtech_horizontal_logo.svg"
             alt="MedTech Logo"
             fill
             className="pointer-events-none object-contain"
