@@ -7,7 +7,7 @@
   /* Custom colors */
   --color-bone-white: #fff4ec;
   --color-sad-beige: #e5e0da;
-  --color-baby-blue: #e1e9ea;
+  --color-baby-blue: #dff1f6;
   --color-pale-blue: #c7d9dd;
   --color-deep-ice-blue: #36a0c3;
   --color-navy-blue: #0e507b;
@@ -62,7 +62,7 @@ body {
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #2e3842;
+    background-color: #57a6a1;
   }
 
   ::-webkit-scrollbar-track {
