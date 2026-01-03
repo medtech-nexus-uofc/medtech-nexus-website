@@ -84,7 +84,7 @@ body {
   }
 
   .text-shadow-lg {
-    text-shadow: 3px 3px 4px (0, 0, 0, 0.35);
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.35);
   }
 
   .text-shadow-xl {
@@ -98,10 +98,10 @@ body {
 
 @keyframes gradientShift {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 0%;
   }
   100% {
-    background-position: 100% 50%;
+    background-position: 100% 100%;
   }
 }
 

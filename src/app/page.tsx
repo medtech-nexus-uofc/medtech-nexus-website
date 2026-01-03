@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="-my-8 flex flex-col items-center justify-center gap-5 md:gap-10">
-      <div className="animate-gradient from-pistachio to-pale-blue flex max-h-[50vh] min-h-[50vh] w-full flex-col items-center justify-center gap-5 bg-gradient-to-r xl:h-screen xl:max-h-none xl:gap-14">
+      <div className="animate-gradient flex max-h-[50vh] min-h-[50vh] w-full flex-col items-center justify-center gap-5 bg-[linear-gradient(to_bottom_right,var(--color-pistachio),var(--color-pale-blue),var(--color-lavender))] xl:h-screen">
         <div className="relative flex h-48 max-h-64 w-3/4 items-center justify-center">
           <Image
             src="/svgs/medtech_horizontal_logo.svg"
@@ -12,7 +12,6 @@ export default function Home() {
             className="pointer-events-none object-contain"
           />
         </div>
-
         <p className="w-2/3 text-justify text-xl font-semibold text-white lg:w-4/5 lg:text-3xl">
           A hub for interdisciplinary learning and collaboration to enhance your
           skills while contributing to our community.
@@ -54,8 +53,8 @@ export default function Home() {
         <div className="mb-14 flex w-full flex-col items-center justify-center gap-10 md:mb-16 md:w-4/5 md:flex-row lg:mb-0 lg:w-1/3 lg:flex-col lg:gap-14 xl:mb-0 xl:gap-7">
           <div className="bg-lavender flex h-32 w-4/5 flex-row items-center justify-between rounded-xl px-8 md:px-2 lg:px-8">
             <div className="flex flex-col">
-              <p className="font-funnel-display text-5xl font-bold text-white">
-                43
+              <p className="font-funnel-display text-center text-5xl font-bold text-white">
+                26
               </p>
               <p className="font-funnel-display text-xl font-bold text-white md:text-lg lg:text-2xl">
                 Members
@@ -72,7 +71,7 @@ export default function Home() {
 
           <div className="bg-lavender flex h-32 w-4/5 flex-row items-center justify-between rounded-xl px-8 md:px-2 lg:px-8">
             <div className="flex flex-col">
-              <p className="font-funnel-display text-5xl font-bold text-white">
+              <p className="font-funnel-display text-center text-5xl font-bold text-white">
                 1
               </p>
               <p className="font-funnel-display text-xl font-bold text-white md:text-lg lg:text-2xl">
