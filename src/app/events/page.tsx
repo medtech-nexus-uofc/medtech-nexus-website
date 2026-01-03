@@ -239,9 +239,9 @@ export default function Events() {
               y2="170.925"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#9EC8B9" />
-              <stop offset="0.456731" stop-color="#C7D9DD" />
-              <stop offset="1" stop-color="#F67280" />
+              <stop stopColor="#9EC8B9" />
+              <stop offset="0.456731" stopColor="#C7D9DD" />
+              <stop offset="1" stopColor="#F67280" />
             </linearGradient>
             <image
               id="image1_0_1"
@@ -268,8 +268,8 @@ export default function Events() {
           <path
             d="M3.5 72.6616H799.035C799.907 72.6616 800.679 72.0965 800.942 71.2651L821.49 6.34955C822.089 4.45851 824.778 4.49839 825.321 6.40635L858.614 123.551C859.153 125.447 861.82 125.502 862.437 123.63L886.55 50.4194C887.159 48.5721 889.779 48.5922 890.359 50.4485L904.39 95.3495C904.944 97.1206 907.402 97.2486 908.136 95.5446L917.479 73.8699C917.795 73.1366 918.517 72.6616 919.316 72.6616H1225.06H1405.46"
             stroke="#F67280"
-            stroke-width="7"
-            stroke-linecap="round"
+            strokeWidth="7"
+            strokeLinecap="round"
           />
           <path
             d="M1391.84 57.5C1401.14 57.5 1408.68 65.039 1408.68 74.3389C1408.68 83.6389 1401.14 91.1787 1391.84 91.1787C1382.54 91.1786 1375 83.6388 1375 74.3389C1375 65.0391 1382.54 57.5001 1391.84 57.5Z"
