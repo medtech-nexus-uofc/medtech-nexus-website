@@ -50,7 +50,7 @@ export default function Home() {
         </div>
 
         {/* Connect to contentful */}
-        <div className="mb-14 flex w-full flex-col items-center justify-center gap-10 md:mb-16 md:w-4/5 md:flex-row lg:mb-0 lg:w-1/3 lg:flex-col lg:gap-14 xl:mb-0 xl:gap-7">
+        <div className="mb-14 flex w-full flex-col items-center justify-center gap-10 md:mb-16 md:w-4/5 md:flex-row lg:mb-0 lg:w-1/3 lg:flex-col lg:gap-16 xl:mb-0 xl:gap-10">
           <div className="bg-lavender flex h-32 w-4/5 flex-row items-center justify-between rounded-xl px-8 md:px-2 lg:px-8">
             <div className="flex flex-col">
               <p className="font-funnel-display text-center text-5xl font-bold text-white">

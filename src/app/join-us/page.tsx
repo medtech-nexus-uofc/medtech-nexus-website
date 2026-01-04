@@ -5,12 +5,11 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronLeft, ChevronRight, ChevronDown } from "lucide-react";
 
-// --- Constants ---
-const ROLES = ["Events Team", "Social Media Team", "Web Development Team"];
+const ROLES = ["Events", "Marketing", "Finance", "Developer"];
 
 export default function JoinUsPage() {
   return (
-    <div className="bg-bone-white font-assistant min-h-screen pb-10">
+    <div className="bg-bone-white font-assistant h-full">
       <main className="container mx-auto max-w-5xl space-y-20 px-4 pt-10">
         <HeroSection />
         <RolesSection />
@@ -20,17 +19,13 @@ export default function JoinUsPage() {
   );
 }
 
-// --- Components ---
-
 function HeroSection() {
   return (
     <section className="space-y-12 text-center">
-      {/* Title with decorative elements */}
       <div className="relative inline-block">
         <h1 className="font-funnel-display text-sea-green text-6xl font-bold text-shadow-sm">
           Join Us!
         </h1>
-        {/* Simple decorative splashes similar to image */}
         <div className="absolute -top-4 -right-6 rotate-107">
           <Image
             src="/svgs/accents/paleBlueAccent1.svg"
@@ -50,14 +45,13 @@ function HeroSection() {
       </div>
 
       {/* Info Card Container */}
-      <div className="bg-pistachio rounded-xl p-8 shadow-sm md:p-12">
-        <div className="md:divide-sea-green grid gap-8 md:grid-cols-2 md:divide-x-4">
-          {/* Column 1 */}
-          <div className="space-y-4 text-left md:pr-14">
-            <h2 className="text-deep-ice-blue text-center text-3xl font-bold">
+      <div className="bg-pistachio mt-5 rounded-xl p-8 shadow-sm md:mx-8 md:mt-8 md:p-12">
+        <div className="divide-sea-green grid gap-8 divide-y-2 lg:grid-cols-2 lg:divide-x-4 lg:divide-y-0">
+          <div className="space-y-4 pb-10 text-left lg:pr-14 lg:pb-0">
+            <h2 className="text-deep-ice-blue font-funnel-display text-center text-2xl font-bold text-shadow-xs md:text-3xl">
               Why You Should Join!
             </h2>
-            <p className="text-justify leading-relaxed text-[#012E55] lg:text-lg">
+            <p className="text-navy-blue text-justify leading-relaxed font-semibold lg:text-lg">
               Join MedTech Nexus to explore the intersection of medicine,
               technology, and community impact. Through hands-on collaborative
               events such as case nights, volunteering, fundraiser projects, and
@@ -68,12 +62,11 @@ function HeroSection() {
             </p>
           </div>
 
-          {/* Column 2 */}
-          <div className="space-y-4 text-left md:pl-6">
-            <h2 className="text-deep-ice-blue text-center text-3xl font-bold">
+          <div className="space-y-4 text-left lg:pl-6">
+            <h2 className="text-deep-ice-blue font-funnel-display text-center text-2xl font-bold text-shadow-xs md:text-3xl">
               Who Can Join?
             </h2>
-            <p className="text-justify leading-relaxed text-[#012E55] lg:text-lg">
+            <p className="text-navy-blue text-justify leading-relaxed font-semibold lg:text-lg">
               As our signature events are case nights and collaborative
               opportunities, we prioritize saving spots for members who are
               students at the University of Calgary to inspire and build a
@@ -117,12 +110,12 @@ function RolesSection() {
   };
 
   return (
-    <section className="flex flex-col items-center space-y-6">
+    <section className="flex flex-col items-center space-y-5">
       <div className="text-center">
-        <h2 className="font-funnel-display text-6xl font-bold tracking-wider text-black uppercase">
+        <h2 className="font-funnel-display text-navy-blue text-5xl font-bold uppercase">
           Roles
         </h2>
-        <div className="mx-auto text-[#D81827]">
+        <div className="mx-auto mt-2">
           <Image
             src="/svgs/accents/ecgLong.svg"
             alt="Heartbeat"
@@ -142,7 +135,7 @@ function RolesSection() {
         </button>
 
         {/* Animated Container */}
-        <div className="relative flex h-64 w-full max-w-lg flex-col items-center justify-center overflow-hidden rounded-2xl bg-[#EBEBEB] shadow-inner">
+        <div className="relative flex h-80 w-full max-w-lg flex-col items-center justify-center overflow-hidden rounded-2xl bg-white shadow-inner drop-shadow-md">
           <AnimatePresence initial={false} custom={direction} mode="wait">
             <motion.div
               key={activeIndex}
@@ -160,8 +153,8 @@ function RolesSection() {
               <h3 className="mb-6 text-2xl font-medium text-gray-700">
                 {ROLES[activeIndex]}
               </h3>
-              <button className="bg-sea-green rounded-lg px-6 py-2 font-bold text-white shadow-md transition-colors hover:bg-[#4a8a8b]">
-                Apply Now!
+              <button className="bg-rose-pink pointer-events-none rounded-lg px-6 py-2 text-lg font-bold text-white shadow-md transition-colors">
+                Applications closed!
               </button>
             </motion.div>
           </AnimatePresence>
@@ -176,7 +169,7 @@ function RolesSection() {
       </div>
 
       {/* Pagination Dots */}
-      <div className="flex gap-2 rounded-sm bg-[#D9D9D9] p-1.5">
+      <div className="flex gap-1.5 rounded-lg bg-[#D9D9D9] p-2 md:gap-2">
         {ROLES.map((_, idx) => (
           <button
             key={idx}
@@ -184,7 +177,7 @@ function RolesSection() {
               const dir = idx > activeIndex ? 1 : -1;
               setActiveIndex([idx, dir]);
             }}
-            className="group relative h-3 w-3"
+            className="group relative size-1.5 md:h-2 md:w-2"
           >
             <motion.div
               animate={{
@@ -204,9 +197,21 @@ function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(3); // Default open to match image
 
   const faqs = [
-    { question: "How long has the team been around?", answer: "Placeholder" },
-    { question: "How do I get involved?", answer: "Placeholder" },
-    { question: "What does a case night look like?", answer: "Placeholder" },
+    {
+      question: "How long has the team been around?",
+      answer:
+        "The Medicine and Technology Nexus is a newly established organization, founded in 2025 and is aiming towards building a collaborative and educational space for everyone to learn, have fun and network.",
+    },
+    {
+      question: "How do I get involved?",
+      answer:
+        "Our organization goes through normal membership registration once each semester during Clubs Week due to a high volume of applicants. There are two main application streams: with a formal interview, and the other one without interviews. Applicants who wish to become a general member by just joining our event to support us will not be interviewed. However, individuals applying for executive roles will receive an interview from the Medtech Nexus team.",
+    },
+    {
+      question: "What does a case night look like?",
+      answer:
+        "Case nights are one of MedTech’s signature events, where we will bring up two patients’ cases that involved technology in treatments and diagnosing; in groups, students will do a mini research through our hints and questions regarding the cases, to figure out which technology was used to treat those patients and present their answers + reasoning at the end. The top two teams from each patient’s case who got the closest answers to the answers of the said cases will win prizes and earn certifications.",
+    },
     {
       question: "What are some other activities usually hosted?",
       answer:
@@ -217,11 +222,10 @@ function FAQSection() {
   return (
     <section className="mx-auto flex w-full max-w-3xl flex-col items-center space-y-6">
       <div className="mb-4 text-center">
-        <h2 className="font-funnel-display text-6xl font-bold tracking-wider text-black uppercase">
+        <h2 className="font-funnel-display text-navy-blue text-5xl font-bold tracking-wider uppercase">
           FAQ
         </h2>
-        {/* Custom Heartbeat SVG */}
-        <div className="mx-auto text-[#D32F2F]">
+        <div className="mx-auto mt-2">
           <Image
             src="/svgs/accents/ecgShort.svg"
             alt="Heartbeat"
@@ -238,8 +242,7 @@ function FAQSection() {
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
               className="text-deep-ice-blue flex w-full items-center justify-between px-6 py-4 text-left font-bold"
             >
-              <span className="text-lg">{faq.question}</span>
-              {/* Animate the icon rotation */}
+              <span className="text-lg md:text-xl">{faq.question}</span>
               <motion.div
                 animate={{ rotate: openIndex === index ? 180 : 0 }}
                 transition={{ duration: 0.3 }}
@@ -257,7 +260,7 @@ function FAQSection() {
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                   className="overflow-hidden"
                 >
-                  <div className="px-6 pb-6 text-sm leading-relaxed text-[#012E55]">
+                  <div className="text-navy-blue px-6 pb-6 leading-relaxed font-semibold">
                     {faq.answer}
                   </div>
                 </motion.div>
