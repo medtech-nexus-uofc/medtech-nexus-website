@@ -7,7 +7,7 @@
   /* Custom colors */
   --color-bone-white: #fff4ec;
   --color-sad-beige: #e5e0da;
-  --color-baby-blue: #e1e9ea;
+  --color-baby-blue: #dff1f6;
   --color-pale-blue: #c7d9dd;
   --color-deep-ice-blue: #36a0c3;
   --color-navy-blue: #0e507b;
@@ -84,7 +84,7 @@ body {
   }
 
   .text-shadow-lg {
-    text-shadow: 3px 3px 4px (0, 0, 0, 0.35);
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.35);
   }
 
   .text-shadow-xl {
@@ -94,4 +94,18 @@ body {
   .text-shadow-none {
     text-shadow: none;
   }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite alternate;
 }
