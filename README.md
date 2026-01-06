@@ -8,6 +8,8 @@ https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
 
+- Verify that the above plugins are working by checking their respective outputs in the `OUTPUT` tab.
+
 Note: The project will use Yarn as the package manager
 
 Installations:
@@ -29,6 +31,10 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Secrets
+
+- This project uses a secret for Formspree. Please reach out to the team lead to obtain secret
+
 ## Learn More
 
 TypeScript resources:
@@ -39,5 +45,3 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
