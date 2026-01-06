@@ -6,8 +6,7 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
-
-  function handleClick() {
+  function handleHamburgerIconClick() {
     if (navbarOpen) {
       setNavbarOpen(false);
     } else {
@@ -18,15 +17,17 @@ export default function Navbar() {
   return (
     <div className="bg-baby-blue sticky top-0 z-10 flex flex-col justify-between drop-shadow-md md:flex-row md:py-1">
       <div className="flex flex-row items-center">
+        {/* Mobile hamburger icon */}
         <div className="absolute left-5 md:hidden">
           <Image
             src="/svgs/assets/hamburger_icon.svg"
             alt="Open Navbar"
             width={25}
             height={15}
-            onClick={handleClick}
+            onClick={handleHamburgerIconClick}
           />
         </div>
+        {/* Logo icon */}
         <div className="my-1 flex w-full justify-center md:ml-2 md:w-auto md:justify-normal">
           <Link href="/">
             <Image
@@ -40,10 +41,12 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* Desktop Links */}
       <div className="hidden md:flex">
         <NavbarLinks />
       </div>
-      {navbarOpen && (
+      {/* Mobile Links */}
+      {navbarOpen && ( // Render mobile navbar only when the navbar is open
         <div className="block md:hidden">
           <NavbarLinks />
         </div>
@@ -52,6 +55,7 @@ export default function Navbar() {
   );
 }
 
+// Component to hold navbar links to avoid code duplication
 function NavbarLinks() {
   return (
     <div className="font-funnel-display text-pale-blue md:text-deep-ice-blue/70 mr-5 flex w-full flex-col gap-5 bg-[#012E55] py-4 pl-5 text-2xl font-bold md:w-auto md:flex-row md:items-center md:justify-start md:gap-8 md:bg-transparent md:text-lg lg:mr-10 lg:gap-12 lg:text-xl">
