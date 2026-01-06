@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="bg-baby-blue sticky top-0 z-10 flex flex-row justify-between py-1 drop-shadow-md">
+    <div className="bg-baby-blue sticky top-0 z-10 flex flex-col justify-between drop-shadow-md md:flex-row md:py-1">
       <Link href="/">
         <Image
           src="/favicon.ico"
@@ -14,7 +14,7 @@ export default function Navbar() {
         />
       </Link>
 
-      <div className="font-funnel-display text-deep-ice-blue/70 mr-5 flex flex-row items-center gap-8 text-lg font-bold lg:mr-10 lg:gap-12 lg:text-xl">
+      <div className="font-funnel-display text-deep-ice-blue/70 mr-5 flex w-full flex-col items-center gap-8 bg-[#012E55] text-lg font-bold md:w-auto md:flex-row md:bg-transparent lg:mr-10 lg:gap-12 lg:text-xl">
         <Link href="our-team">
           <h1 className="hover:scale-105">Our Team</h1>
         </Link>
