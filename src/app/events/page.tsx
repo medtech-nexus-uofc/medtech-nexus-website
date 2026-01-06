@@ -15,7 +15,7 @@ export default function Events() {
             width={0}
             height={0}
             sizes="90vw"
-            className="m-15 h-auto w-[90vw]"
+            className="mx-[5vw] my-15 h-auto w-[90vw]"
           />
         </div>
       </div>
@@ -67,7 +67,7 @@ export default function Events() {
           </p>
           <div className="flex flex-1 justify-center">
             <Image
-              src="/images/assets/stethescope.png"
+              src="/svgs/assets/stethoscope1.svg"
               alt="Accent"
               width={150}
               height={100}
@@ -88,7 +88,7 @@ export default function Events() {
               className="m-5"
             />
           </div>
-          <p className="flex-6 p-10">
+          <p className="flex-6 p-4 md:p-10">
             MedTech Nexus organizes fundraisers to support local hospitals and
             medical charities across Alberta. From donation drives to
             interactive charity events, our members help raise funds for
@@ -109,13 +109,15 @@ export default function Events() {
             innovation in Alberta. These events strengthen community ties and
             remind us of the real-world impact of technology in medicine.
           </p>
-          <Image
-            src="/svgs/assets/navyBluePeople.svg"
-            alt="People Asset"
-            width={194}
-            height={87}
-            className="m-5"
-          />
+          <div className="flex flex-1 justify-center">
+            <Image
+              src="/svgs/assets/navyBluePeople.svg"
+              alt="People Asset"
+              width={194}
+              height={87}
+              className="m-5"
+            />
+          </div>
         </div>
       </div>
     </div>
