@@ -78,7 +78,7 @@ export default function Contact() {
           </div>
 
           <div className="group relative mb-6 flex w-full max-w-lg">
-            <div className="bg-lavender rounded-lg px-4 py-2 text-center text-base font-bold text-white shadow-sm">
+            <div className="bg-lavender rounded-lg px-4 py-2 text-center text-base font-bold text-white shadow-sm drop-shadow-md">
               <span>Email inquries to medtech.nexus.uofc@gmail.com</span>
             </div>
             <div className="absolute top-1/2 right-0 hidden -translate-y-1/2 sm:block">
@@ -101,7 +101,7 @@ export default function Contact() {
               name="name"
               placeholder="Name"
               required
-              className="border-royal-purple placeholder-lavender w-full rounded-xl border-2 bg-white px-4 py-3 text-gray-700 transition-colors focus:border-[#8B5CF6] focus:ring-1 focus:ring-[#8B5CF6] focus:outline-none"
+              className="border-royal-purple placeholder-lavender w-full rounded-xl border-2 bg-white px-4 py-3 text-gray-700 drop-shadow-md transition-colors focus:border-[#8B5CF6] focus:ring-1 focus:ring-[#8B5CF6] focus:outline-none"
             />
 
             <input
@@ -109,7 +109,7 @@ export default function Contact() {
               name="email"
               placeholder="Email"
               required
-              className="border-royal-purple placeholder-lavender w-full rounded-xl border-2 bg-white px-4 py-3 text-gray-700 transition-colors focus:border-[#8B5CF6] focus:ring-1 focus:ring-[#8B5CF6] focus:outline-none"
+              className="border-royal-purple placeholder-lavender w-full rounded-xl border-2 bg-white px-4 py-3 text-gray-700 drop-shadow-md transition-colors focus:border-[#8B5CF6] focus:ring-1 focus:ring-[#8B5CF6] focus:outline-none"
             />
 
             <textarea
@@ -117,7 +117,7 @@ export default function Contact() {
               name="message"
               placeholder="Message..."
               required
-              className="border-royal-purple placeholder-lavender w-full resize-none rounded-xl border-2 bg-white px-4 py-3 text-gray-700 transition-colors focus:border-[#8B5CF6] focus:ring-1 focus:ring-[#8B5CF6] focus:outline-none"
+              className="border-royal-purple placeholder-lavender w-full resize-none rounded-xl border-2 bg-white px-4 py-3 text-gray-700 drop-shadow-md transition-colors focus:border-[#8B5CF6] focus:ring-1 focus:ring-[#8B5CF6] focus:outline-none"
             />
 
             <div className="relative flex w-full justify-center lg:justify-end">
