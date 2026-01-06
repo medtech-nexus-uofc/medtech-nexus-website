@@ -12,7 +12,7 @@ export default function Home() {
             className="pointer-events-none object-contain"
           />
         </div>
-        <p className="w-2/3 text-justify text-xl font-semibold text-white lg:w-4/5 lg:text-3xl">
+        <p className="w-2/3 pb-10 text-justify text-xl font-semibold text-white md:pb-0 lg:w-4/5 lg:text-3xl">
           A hub for interdisciplinary learning and collaboration to enhance your
           skills while contributing to our community.
         </p>

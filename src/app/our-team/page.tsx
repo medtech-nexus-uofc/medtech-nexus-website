@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { teamData, departments, type Department } from "@/data/teamData";
-import ClipboardCard from "@/components/clipboard";
+import ClipboardCard from "@/components/ourTeam/clipboard";
 
 export default function OurTeam() {
   const [activeTab, setActiveTab] = useState<Department>("Presidents");
@@ -32,6 +32,7 @@ export default function OurTeam() {
             alt="Decorative Petals"
             width={40}
             height={40}
+            className="pointer-events-none"
           />
         </div>
         <div className="absolute -right-6 -bottom-4 rotate-10 transform text-3xl text-pink-300">
@@ -40,6 +41,7 @@ export default function OurTeam() {
             alt="Decorative Petals"
             width={25}
             height={25}
+            className="pointer-events-none"
           />
         </div>
 

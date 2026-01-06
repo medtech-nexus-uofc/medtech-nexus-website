@@ -10,7 +10,7 @@ export default function ClipboardCard({ member }: { member: TeamMember }) {
     <div
       className={`relative z-0 h-[300px] w-56 ${member.clipboardColor} rounded-4xl p-2.5 pb-3 shadow-md`}
     >
-      {/* The "Clip" Mechanism - Scaled Down */}
+      {/* The "Clip" Mechanism */}
       <div className="absolute -top-2.5 left-1/2 z-0 h-5 w-16 -translate-x-1/2 rounded-t-lg bg-[#D1C4C4]"></div>
       <div className="absolute -top-2 left-1/2 z-20 flex h-8 w-20 -translate-x-1/2 flex-col items-center justify-center rounded-lg bg-[#ECCFCF] shadow-sm">
         <div className="bg-bone-white mt-0.5 h-2.5 w-2.5 rounded-full border border-gray-300 shadow-inner"></div>
@@ -23,7 +23,7 @@ export default function ClipboardCard({ member }: { member: TeamMember }) {
             src={member.pfp}
             alt={member.name}
             fill
-            className="object-cover"
+            className="pointer-events-none object-cover"
           />
         </div>
 
