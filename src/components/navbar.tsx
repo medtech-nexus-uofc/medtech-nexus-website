@@ -17,24 +17,27 @@ export default function Navbar() {
 
   return (
     <div className="bg-baby-blue sticky top-0 z-10 flex flex-col justify-between drop-shadow-md md:flex-row md:py-1">
-      <Image
-        src="/svgs/assets/hamburger_icon.svg"
-        alt="Open Navbar"
-        width={50}
-        height={30}
-        className="absolute md:hidden"
-        onClick={handleClick}
-      />
-      <div className="flex w-full justify-center md:w-auto md:justify-normal">
-        <Link href="/">
+      <div className="flex flex-row items-center">
+        <div className="absolute left-5 md:hidden">
           <Image
-            src="/favicon.ico"
-            alt="MedTech Logo"
-            width={75}
-            height={40}
-            className="ml-2 hover:scale-105"
+            src="/svgs/assets/hamburger_icon.svg"
+            alt="Open Navbar"
+            width={25}
+            height={15}
+            onClick={handleClick}
           />
-        </Link>
+        </div>
+        <div className="my-1 flex w-full justify-center md:ml-2 md:w-auto md:justify-normal">
+          <Link href="/">
+            <Image
+              src="/favicon.ico"
+              alt="MedTech Logo"
+              width={75}
+              height={40}
+              className="hover:scale-105"
+            />
+          </Link>
+        </div>
       </div>
 
       <div className="hidden md:flex">
@@ -51,7 +54,7 @@ export default function Navbar() {
 
 function NavbarLinks() {
   return (
-    <div className="font-funnel-display text-deep-ice-blue/70 mr-5 flex w-full flex-col items-center gap-8 bg-[#012E55] text-lg font-bold md:w-auto md:flex-row md:bg-transparent lg:mr-10 lg:gap-12 lg:text-xl">
+    <div className="font-funnel-display text-pale-blue md:text-deep-ice-blue/70 mr-5 flex w-full flex-col gap-5 bg-[#012E55] py-4 pl-5 text-2xl font-bold md:w-auto md:flex-row md:items-center md:justify-start md:gap-8 md:bg-transparent md:text-lg lg:mr-10 lg:gap-12 lg:text-xl">
       <Link href="our-team">
         <h1 className="hover:scale-105">Our Team</h1>
       </Link>
