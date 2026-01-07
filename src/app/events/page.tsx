@@ -1,9 +1,145 @@
+import Image from "next/image";
+
 export default function Events() {
   return (
-    <div className="flex flex-row items-center justify-center">
-      <h1 className="font-funnel-display text-deep-ice-blue text-2xl font-bold text-shadow-sm md:text-3xl lg:text-4xl">
-        Events
-      </h1>
+    <div className="mb-10 flex flex-col items-center gap-10">
+      {/* TIMELINE */}
+      <div className="flex flex-col items-center justify-center">
+        <div className="relative my-12 text-center">
+          <div className="absolute -top-4 -right-9 -rotate-65 transform">
+            <Image
+              src="/svgs/accents/pistachioAccent1.svg"
+              alt="Decorative Petals"
+              width={30}
+              height={30}
+              className="pointer-events-none scale-x-[-1] scale-y-[-1]"
+            />
+          </div>
+          <div className="absolute -bottom-5 -left-6 -rotate-5 transform">
+            <Image
+              src="/svgs/accents/pistachioAccent2.svg"
+              alt="Decorative Petals"
+              width={25}
+              height={25}
+              className="pointer-events-none scale-x-[-1]"
+            />
+          </div>
+          <h1 className="font-funnel-display text-deep-ice-blue text-4xl font-bold text-shadow-sm sm:text-6xl">
+            Events
+          </h1>
+        </div>
+        <div className="flex">
+          <Image
+            src="/svgs/assets/eventTimeline.svg"
+            alt="Events"
+            width={0}
+            height={0}
+            sizes="90vw"
+            className="mx-[5vw] my-8 h-auto w-[90vw]"
+          />
+        </div>
+      </div>
+      {/* CATEGORIES */}
+      <div className="bg-pale-blue border-navy-blue flex w-[85vw] flex-col items-center justify-center rounded-2xl border py-2 drop-shadow-md lg:w-[80vw] xl:w-1/2">
+        <h1 className="font-funnel-display text-deep-ice-blue text-shadow-s mt-5 text-3xl font-bold md:text-4xl">
+          EVENT CATEGORIES
+        </h1>
+        <Image
+          src="/svgs/assets/longHeartbeat.svg"
+          alt="Accent"
+          width={0}
+          height={0}
+          sizes="45vw 80vw"
+          className="my-5 h-auto w-[80vw] md:w-[46vw]"
+        />
+        <h1 className="font-funnel-display text-deep-ice-blue text-shadow-s mt-5 text-2xl font-bold md:text-3xl">
+          CASE NIGHTS
+        </h1>
+        <div className="font-funnel-display flex flex-row">
+          <div className="hidden flex-1 justify-center md:flex">
+            <Image
+              src="/svgs/assets/bandaid.svg"
+              alt="Bandaid"
+              width={100}
+              height={100}
+              className="ml-8 -rotate-6"
+            />
+          </div>
+          <p className="text-navy-blue flex-6 px-8 py-4 text-justify font-semibold md:px-10 md:text-lg">
+            MedTech Case Night invites students to become ‘medical detectives’
+            for an evening. In small groups, participants examine real-world
+            patient stories, use clues and guiding questions to deduce the
+            condition, and predict the innovative technology used to solve it.
+            The event blends research, teamwork, and competition in a game-style
+            format featuring points, hints, and creative presentations.
+          </p>
+        </div>
+        <h1 className="font-funnel-display text-deep-ice-blue text-shadow-s mt-5 text-2xl font-bold md:text-3xl">
+          VOLUNTEERING
+        </h1>
+        <div className="font-funnel-display flex flex-row">
+          <p className="text-navy-blue flex-6 px-8 py-4 text-justify font-semibold md:px-10 md:text-lg">
+            Through partnerships with hospitals and medical charities, our club
+            provides opportunities for members to volunteer as a team. These
+            experiences foster leadership, compassion, and firsthand insight
+            into how healthcare operates behind the scenes-bridging classroom
+            learning with real impact.
+          </p>
+          <div className="hidden flex-1 justify-center md:flex">
+            <Image
+              src="/svgs/assets/stethoscope1.svg"
+              alt="Accent"
+              width={150}
+              height={100}
+              className="mr-10 rotate-15"
+            />
+          </div>
+        </div>
+        <h1 className="font-funnel-display text-deep-ice-blue text-shadow-s mt-5 text-2xl font-bold md:text-3xl">
+          FUNDRAISERS
+        </h1>
+        <div className="font-funnel-display flex flex-row">
+          <div className="hidden flex-1 justify-center md:flex">
+            <Image
+              src="/svgs/assets/pinkClipboard.svg"
+              alt="Clipboard"
+              width={100}
+              height={100}
+              className="ml-5 -rotate-6"
+            />
+          </div>
+          <p className="text-navy-blue flex-6 px-8 py-4 text-justify font-semibold md:px-10 md:text-lg">
+            MedTech Nexus organizes fundraisers to support local hospitals and
+            medical charities across Alberta. From donation drives to
+            interactive charity events, our members help raise funds for
+            hospitals and organizations that improve patient care and medical
+            innovation in Alberta. These events strengthen community ties and
+            remind us of the real-world impact of technology in medicine.
+          </p>
+        </div>
+        <h1 className="font-funnel-display text-deep-ice-blue text-shadow-s mt-5 text-2xl font-bold md:text-3xl">
+          NETWORKING SERIES
+        </h1>
+        <div className="font-funnel-display flex flex-row">
+          <p className="text-navy-blue flex-6 px-8 py-4 text-justify font-semibold md:px-10 md:text-lg">
+            MedTech Nexus organizes fundraisers to support local hospitals and
+            medical charities across Alberta. From donation drives to
+            interactive charity events, our members help raise funds for
+            hospitals and organizations that improve patient care and medical
+            innovation in Alberta. These events strengthen community ties and
+            remind us of the real-world impact of technology in medicine.
+          </p>
+          <div className="hidden flex-1 justify-center md:flex">
+            <Image
+              src="/svgs/assets/navyBluePeople.svg"
+              alt="People Asset"
+              width={194}
+              height={87}
+              className="mr-8"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
