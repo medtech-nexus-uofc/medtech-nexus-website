@@ -29,8 +29,8 @@ export default function Events() {
           alt="Accent"
           width={0}
           height={0}
-          sizes="85vw"
-          className="my-5 h-auto w-[85vw]"
+          sizes="45vw 80vw"
+          className="my-5 h-auto w-[80vw] md:w-[46vw]"
         />
         <h1 className="font-funnel-display text-deep-ice-blue text-shadow-s mt-5 text-2xl font-bold md:text-3xl">
           CASE NIGHTS
