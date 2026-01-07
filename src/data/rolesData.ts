@@ -6,7 +6,7 @@ export const roleData: RoleProps[] = [
     description:
       "General Members are the heart of the club’s community. This role is open to students who want to explore the intersection of medicine and technology without the commitment of a leadership position.",
     graphicURL: "/svgs/roles/general_members.svg",
-    bgColor: "bg-[#FFF4EC]",
+    bgColor: "bg-sad-beige/60",
     isOpen: false,
     formLink: null,
     note: "Note: Registration for General Membership is limited, only opening twice per year during Clubs Week!",
@@ -24,7 +24,7 @@ export const roleData: RoleProps[] = [
   {
     team: "Marketing",
     description:
-      "The Marketing Team is responsible for creating, designing, and managing social media content - including posts, stories, graphics, and videos to enhance the club’s online presence. They engage with the student community to increase visibility and participation, helping ensure that MedTech Nexus maintains a strong, creative, and consistent brand identity across all platforms.",
+      "The Marketing Team is responsible for creating, designing, and managing social media content - including posts, stories, graphics, and videos to enhance the club’s online presence. They engage with the student community to increase visibility and participation.",
     graphicURL: "/svgs/roles/marketing_team.svg",
     bgColor: "bg-[#D2E9E2]",
     isOpen: false,

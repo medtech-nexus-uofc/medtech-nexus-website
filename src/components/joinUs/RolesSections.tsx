@@ -57,7 +57,7 @@ export function RolesSection() {
           <ChevronLeft size={48} strokeWidth={2.5} />
         </button>
 
-        <div className="relative flex min-h-[450px] w-4/5 items-center justify-center overflow-hidden md:w-3/4 lg:w-9/10">
+        <div className="relative flex min-h-[450px] w-4/5 items-center justify-center overflow-hidden rounded-2xl md:w-3/4 lg:w-9/10">
           <AnimatePresence initial={false} custom={direction} mode="wait">
             <motion.div
               key={activeIndex}
