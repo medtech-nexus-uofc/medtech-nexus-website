@@ -4,10 +4,10 @@ export function HeroSection() {
   return (
     <section className="flex flex-col items-center justify-center gap-12">
       <div className="relative inline-block">
-        <h1 className="font-funnel-display text-sea-green mt-1 text-6xl font-bold text-shadow-sm sm:text-6xl">
+        <h1 className="font-funnel-display text-sea-green text-4xl font-bold text-shadow-sm sm:text-6xl">
           Join Us!
         </h1>
-        <div className="absolute -top-2 -right-6 rotate-107">
+        <div className="absolute -top-4 -right-6 rotate-107">
           <Image
             src="/svgs/accents/paleBlueAccent1.svg"
             alt="Accent"
@@ -19,8 +19,8 @@ export function HeroSection() {
           <Image
             src="/svgs/accents/paleBlueAccent2.svg"
             alt="Accent"
-            width={25}
-            height={25}
+            width={22}
+            height={22}
           />
         </div>
       </div>
