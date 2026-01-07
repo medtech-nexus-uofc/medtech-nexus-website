@@ -5,9 +5,29 @@ export default function Events() {
     <div className="mb-10 flex flex-col items-center gap-10">
       {/* TIMELINE */}
       <div className="flex flex-col items-center justify-center">
-        <h1 className="font-funnel-display text-deep-ice-blue text-6xl font-bold text-shadow-sm">
-          Events
-        </h1>
+        <div className="relative my-12 text-center">
+          <div className="absolute -top-4 -right-9 -rotate-65 transform">
+            <Image
+              src="/svgs/accents/pistachioAccent1.svg"
+              alt="Decorative Petals"
+              width={40}
+              height={40}
+              className="pointer-events-none scale-x-[-1] scale-y-[-1]"
+            />
+          </div>
+          <div className="absolute -bottom-5 -left-6 -rotate-5 transform">
+            <Image
+              src="/svgs/accents/pistachioAccent2.svg"
+              alt="Decorative Petals"
+              width={25}
+              height={25}
+              className="pointer-events-none scale-x-[-1]"
+            />
+          </div>
+          <h1 className="font-funnel-display text-deep-ice-blue text-6xl font-bold text-shadow-sm">
+            Events
+          </h1>
+        </div>
         <div className="flex">
           <Image
             src="/svgs/assets/eventTimeline.svg"
