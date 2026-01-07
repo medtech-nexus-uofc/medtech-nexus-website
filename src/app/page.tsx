@@ -12,14 +12,14 @@ export default function Home() {
             className="pointer-events-none object-contain"
           />
         </div>
-        <p className="w-2/3 pb-10 text-justify text-xl font-semibold text-white md:pb-0 lg:w-4/5 lg:text-3xl">
+        <p className="w-2/3 pb-10 text-justify text-xl font-semibold text-white md:pb-0 lg:w-7/10 lg:text-3xl 2xl:w-1/2">
           A hub for interdisciplinary learning and collaboration to enhance your
           skills while contributing to our community.
         </p>
       </div>
 
       <div className="flex w-full flex-col items-center justify-center gap-10 lg:mb-10 lg:w-9/10 lg:flex-row xl:mt-10 xl:w-3/4 2xl:w-3/5">
-        <div className="bg-bocchi-pink relative my-5 flex h-full w-4/5 flex-col items-center justify-center gap-4 rounded-xl p-4 lg:w-2/3 2xl:gap-4">
+        <div className="bg-bocchi-pink relative my-5 flex h-full w-4/5 flex-col items-center justify-center gap-4 rounded-2xl p-4 drop-shadow-md lg:w-2/3 2xl:gap-4">
           <h1 className="text-rose-pink font-funnel-display text-center text-3xl font-bold text-shadow-sm md:text-5xl">
             WHAT WE DO
           </h1>
@@ -50,8 +50,8 @@ export default function Home() {
         </div>
 
         {/* Connect to contentful */}
-        <div className="mb-14 flex w-full flex-col items-center justify-center gap-10 md:mb-16 md:w-4/5 md:flex-row lg:mb-0 lg:w-1/3 lg:flex-col lg:gap-10 xl:mb-0 xl:gap-7">
-          <div className="bg-lavender flex h-32 w-4/5 flex-row items-center justify-between rounded-xl px-8 md:px-2 lg:px-8">
+        <div className="mb-14 flex w-full flex-col items-center justify-center gap-10 md:mb-16 md:w-4/5 md:flex-row lg:mb-0 lg:w-1/3 lg:flex-col lg:gap-10 xl:mb-0 xl:gap-9.5 2xl:gap-10">
+          <div className="bg-lavender flex h-32 w-4/5 flex-row items-center justify-between rounded-2xl px-8 drop-shadow-md md:px-2 lg:px-8">
             <div className="flex flex-col">
               <p className="font-funnel-display text-center text-5xl font-bold text-white">
                 26
@@ -69,7 +69,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-lavender flex h-32 w-4/5 flex-row items-center justify-between rounded-xl px-8 md:px-2 lg:px-8">
+          <div className="bg-lavender flex h-32 w-4/5 flex-row items-center justify-between rounded-2xl px-8 drop-shadow-md md:px-2 lg:px-8">
             <div className="flex flex-col">
               <p className="font-funnel-display text-center text-5xl font-bold text-white">
                 1
@@ -87,7 +87,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="bg-lavender flex h-32 w-4/5 flex-row items-center justify-between rounded-xl px-8 md:px-2 lg:px-8">
+          <div className="bg-lavender flex h-32 w-4/5 flex-row items-center justify-between rounded-2xl px-8 drop-shadow-md md:px-2 lg:px-8">
             <div className="flex flex-col">
               <p className="font-funnel-display text-5xl font-bold text-white">
                 20
