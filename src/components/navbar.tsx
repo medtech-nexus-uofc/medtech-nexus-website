@@ -4,8 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+interface NavbarLinksProps {
+  onLinkClick?: () => void;
+}
+
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
+
+  const closeNavbar = () => setNavbarOpen(false);
+
   function handleHamburgerIconClick() {
     if (navbarOpen) {
       setNavbarOpen(false);
@@ -29,7 +36,7 @@ export default function Navbar() {
         </div>
         {/* Logo icon */}
         <div className="my-1 flex w-full justify-center md:ml-2 md:w-auto md:justify-normal">
-          <Link href="/">
+          <Link href="/" onClick={closeNavbar}>
             <Image
               src="/favicon.ico"
               alt="MedTech Logo"
@@ -48,7 +55,7 @@ export default function Navbar() {
       {/* Mobile Links */}
       {navbarOpen && ( // Render mobile navbar only when the navbar is open
         <div className="block md:hidden">
-          <NavbarLinks />
+          <NavbarLinks onLinkClick={closeNavbar} />
         </div>
       )}
     </div>
@@ -56,22 +63,22 @@ export default function Navbar() {
 }
 
 // Component to hold navbar links to avoid code duplication
-function NavbarLinks() {
+function NavbarLinks({ onLinkClick }: NavbarLinksProps) {
   return (
-    <div className="font-funnel-display text-pale-blue md:text-deep-ice-blue/70 mr-5 flex w-full flex-col gap-5 bg-[#012E55] py-4 pl-5 text-2xl font-bold md:w-auto md:flex-row md:items-center md:justify-start md:gap-8 md:bg-transparent md:text-lg lg:mr-10 lg:gap-12 lg:text-xl">
-      <Link href="our-team">
+    <div className="font-funnel-display text-pale-blue md:text-deep-ice-blue/70 mr-5 flex w-full flex-col gap-5 bg-[#012E55] py-4 pl-5 text-xl font-bold md:w-auto md:flex-row md:items-center md:justify-start md:gap-8 md:bg-transparent md:text-lg lg:mr-10 lg:gap-12 lg:text-xl">
+      <Link href="our-team" onClick={onLinkClick}>
         <h1 className="hover:scale-105">Our Team</h1>
       </Link>
 
-      <Link href="events">
+      <Link href="events" onClick={onLinkClick}>
         <h1 className="hover:scale-105">Events</h1>
       </Link>
 
-      <Link href="contact-us">
+      <Link href="contact-us" onClick={onLinkClick}>
         <h1 className="hover:scale-105">Contact</h1>
       </Link>
 
-      <Link href="join-us">
+      <Link href="join-us" onClick={onLinkClick}>
         <h1 className="hover:scale-105">Join</h1>
       </Link>
     </div>
