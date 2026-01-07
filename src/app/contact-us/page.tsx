@@ -78,7 +78,7 @@ export default function Contact() {
           </div>
 
           <div className="group relative mb-6 flex w-full max-w-lg">
-            <div className="bg-lavender rounded-lg px-4 py-2 text-center text-base font-bold text-white shadow-sm">
+            <div className="bg-lavender rounded-lg px-4 py-2 text-center text-base font-bold text-white shadow-sm drop-shadow-md">
               <span>Email inquries to medtech.nexus.uofc@gmail.com</span>
             </div>
             <div className="absolute top-1/2 right-0 hidden -translate-y-1/2 sm:block">
@@ -101,7 +101,7 @@ export default function Contact() {
               name="name"
               placeholder="Name"
               required
-              className="border-royal-purple placeholder-lavender w-full rounded-xl border-2 bg-white px-4 py-3 text-gray-700 transition-colors focus:border-[#8B5CF6] focus:ring-1 focus:ring-[#8B5CF6] focus:outline-none"
+              className="border-royal-purple placeholder-lavender w-full rounded-2xl border-2 bg-white px-4 py-3 text-gray-700 drop-shadow-md transition-colors focus:border-[#8B5CF6] focus:ring-1 focus:ring-[#8B5CF6] focus:outline-none"
             />
 
             <input
@@ -109,7 +109,7 @@ export default function Contact() {
               name="email"
               placeholder="Email"
               required
-              className="border-royal-purple placeholder-lavender w-full rounded-xl border-2 bg-white px-4 py-3 text-gray-700 transition-colors focus:border-[#8B5CF6] focus:ring-1 focus:ring-[#8B5CF6] focus:outline-none"
+              className="border-royal-purple placeholder-lavender w-full rounded-2xl border-2 bg-white px-4 py-3 text-gray-700 drop-shadow-md transition-colors focus:border-[#8B5CF6] focus:ring-1 focus:ring-[#8B5CF6] focus:outline-none"
             />
 
             <textarea
@@ -117,7 +117,7 @@ export default function Contact() {
               name="message"
               placeholder="Message..."
               required
-              className="border-royal-purple placeholder-lavender w-full resize-none rounded-xl border-2 bg-white px-4 py-3 text-gray-700 transition-colors focus:border-[#8B5CF6] focus:ring-1 focus:ring-[#8B5CF6] focus:outline-none"
+              className="border-royal-purple placeholder-lavender w-full resize-none rounded-2xl border-2 bg-white px-4 py-3 text-gray-700 drop-shadow-md transition-colors focus:border-[#8B5CF6] focus:ring-1 focus:ring-[#8B5CF6] focus:outline-none"
             />
 
             <div className="relative flex w-full justify-center lg:justify-end">
@@ -132,7 +132,7 @@ export default function Contact() {
 
             <div className="pointer-events-none fixed top-20 right-0 z-100 flex w-full max-w-xs flex-col gap-4">
               {status === "SUCCESS" && (
-                <div className="animate-in fade-in slide-in-from-right-8 bg-pistachio text-sea-green pointer-events-auto rounded-xl border-2 border-white p-4 text-sm font-bold shadow-lg duration-500">
+                <div className="animate-in fade-in slide-in-from-right-8 bg-pistachio text-sea-green pointer-events-auto rounded-2xl border-2 border-white p-4 text-sm font-bold shadow-lg duration-500">
                   <div className="flex items-center justify-between">
                     <span>Message sent! We&apos;ll get back to you soon.</span>
                     <button
@@ -146,7 +146,7 @@ export default function Contact() {
               )}
 
               {status === "ERROR" && (
-                <div className="animate-in fade-in slide-in-from-right-8 bg-rose-pink pointer-events-auto rounded-xl border-2 border-white p-4 font-bold text-red-900 shadow-lg duration-500">
+                <div className="animate-in fade-in slide-in-from-right-8 bg-rose-pink pointer-events-auto rounded-2xl border-2 border-white p-4 font-bold text-red-900 shadow-lg duration-500">
                   <div className="flex items-center justify-between">
                     <span>Oops! Something went wrong. Please try again.</span>
                     <button
