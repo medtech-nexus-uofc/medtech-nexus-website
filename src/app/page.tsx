@@ -20,8 +20,8 @@ export default function Home() {
 
       <div className="flex w-full flex-col items-center justify-center gap-10 lg:mb-10 lg:w-9/10 lg:flex-row xl:mt-10 xl:w-3/4 2xl:w-3/5">
         <div className="bg-bocchi-pink relative my-5 flex h-full w-4/5 flex-col items-center justify-center gap-4 rounded-2xl p-4 drop-shadow-md lg:w-2/3 2xl:gap-4">
-          <h1 className="text-rose-pink font-funnel-display text-center text-3xl font-bold text-shadow-sm md:text-5xl">
-            WHAT WE DO
+          <h1 className="text-rose-pink font-funnel-display text-center text-3xl font-bold capitalize text-shadow-sm md:text-5xl">
+            what we do
           </h1>
           <h2 className="px-4 text-lg font-bold text-white md:px-0 md:text-xl">
             Connecting students with real-world opportunities.
@@ -109,8 +109,8 @@ export default function Home() {
 
       {/* Uncomment when theres actually stuff to put in here */}
       {/* <div className="relative flex w-3/4 flex-col items-center gap-2 2xl:w-1/2">
-        <h1 className="text-navy-blue font-funnel-display text-4xl font-bold text-shadow-sm">
-          HIGHLIGHTS
+        <h1 className="text-navy-blue font-funnel-display text-4xl font-bold text-shadow-sm capitalize">
+          highlights
         </h1>
         <div className="flex w-3/10 items-center justify-center">
           <Image
@@ -122,11 +122,11 @@ export default function Home() {
             className="pointer-events-none h-auto w-full object-contain"
           />
         </div>
-      </div>
+      </div>*/}
 
       <div className="relative mb-10 flex w-3/4 flex-col items-center gap-2 2xl:w-1/2">
-        <h1 className="text-navy-blue font-funnel-display text-4xl font-bold text-shadow-sm">
-          OUR SPONSORS
+        <h1 className="text-navy-blue font-funnel-display text-4xl font-bold capitalize text-shadow-sm">
+          our partners
         </h1>
         <div className="flex w-3/10 items-center justify-center">
           <Image
@@ -138,10 +138,8 @@ export default function Home() {
             className="pointer-events-none h-auto w-full object-contain"
           />
         </div>
-        <div className="grid grid-cols-3 gap-2">
-          // maybe make a component for this
-        </div>
-      </div> */}
+        <div className="grid grid-cols-3 gap-2"></div>
+      </div>
     </div>
   );
 }

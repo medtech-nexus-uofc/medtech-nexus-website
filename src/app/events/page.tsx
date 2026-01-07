@@ -122,12 +122,11 @@ export default function Events() {
         </h1>
         <div className="font-funnel-display flex flex-row">
           <p className="text-navy-blue flex-6 px-8 py-4 text-justify font-semibold md:px-10 md:text-lg">
-            MedTech Nexus organizes fundraisers to support local hospitals and
-            medical charities across Alberta. From donation drives to
-            interactive charity events, our members help raise funds for
-            hospitals and organizations that improve patient care and medical
-            innovation in Alberta. These events strengthen community ties and
-            remind us of the real-world impact of technology in medicine.
+            Our Guest Speaker Series invites experts from healthcare, academia,
+            and the biotech industry to share insights on emerging medical
+            technologies. Members gain exposure to real-world applications of
+            AI, robotics, diagnostics, and digital health tools shaping the
+            future of medicine.
           </p>
           <div className="hidden flex-1 justify-center md:flex">
             <Image

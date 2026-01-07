@@ -7,8 +7,8 @@ export const roleData: RoleProps[] = [
       "General Members are the heart of the club’s community. This role is open to students who want to explore the intersection of medicine and technology without the commitment of a leadership position.",
     graphicURL: "/svgs/roles/general_members.svg",
     bgColor: "bg-sad-beige/60",
-    isOpen: false,
-    formLink: null,
+    isOpen: true,
+    formLink: "https://forms.gle/7RZnVTnn6SCmLzFP8",
     note: "Note: Registration for General Membership is limited, only opening twice per year during Clubs Week!",
   },
   {
