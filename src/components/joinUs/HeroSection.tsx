@@ -25,7 +25,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="bg-pistachio mt-2 flex w-4/5 flex-col rounded-xl drop-shadow-lg md:w-3/4 lg:w-9/10 lg:flex-row">
+      <div className="bg-pistachio mt-2 flex w-4/5 flex-col rounded-2xl drop-shadow-md md:w-3/4 lg:w-9/10 lg:flex-row">
         <div className="divide-sea-green mx-8 flex flex-col divide-y-2 lg:mx-12 lg:my-5 lg:flex-row lg:divide-x-4 lg:divide-y-0">
           <div className="flex flex-1 flex-col gap-5 py-8 lg:pr-12">
             <h2 className="font-funnel-display text-deep-ice-blue text-center text-[22px] font-bold text-shadow-xs md:text-3xl">

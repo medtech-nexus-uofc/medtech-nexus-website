@@ -4,16 +4,16 @@ import { useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-
-const ROLES = ["Events", "Marketing", "Finance", "Developer"];
+import RoleDescCards from "./RoleDescCards";
+import { roleData } from "@/data/rolesData";
 
 export function RolesSection() {
   const [[activeIndex, direction], setActiveIndex] = useState([0, 0]);
 
   const paginate = (newDirection: number) => {
     let nextIndex = activeIndex + newDirection;
-    if (nextIndex < 0) nextIndex = ROLES.length - 1;
-    if (nextIndex >= ROLES.length) nextIndex = 0;
+    if (nextIndex < 0) nextIndex = roleData.length - 1;
+    if (nextIndex >= roleData.length) nextIndex = 0;
     setActiveIndex([nextIndex, newDirection]);
   };
 
@@ -34,7 +34,7 @@ export function RolesSection() {
   };
 
   return (
-    <section className="flex flex-col items-center space-y-5">
+    <section className="flex flex-col items-center gap-2">
       <div className="text-center">
         <h2 className="font-funnel-display text-navy-blue text-5xl font-bold uppercase">
           Roles
@@ -49,17 +49,15 @@ export function RolesSection() {
         </div>
       </div>
 
-      {/* Carousel Component */}
-      <div className="flex w-full items-center justify-center gap-4 md:gap-8">
+      <div className="flex w-full items-center justify-center gap-2 md:gap-8">
         <button
-          className="text-sea-green transition-transform hover:scale-110 active:scale-90"
+          className="text-sea-green shrink-0 transition-transform hover:scale-110 active:scale-90"
           onClick={() => paginate(-1)}
         >
           <ChevronLeft size={48} strokeWidth={2.5} />
         </button>
 
-        {/* Animated Container */}
-        <div className="relative flex h-80 w-full max-w-lg flex-col items-center justify-center overflow-hidden rounded-2xl bg-white shadow-inner drop-shadow-md">
+        <div className="relative flex min-h-[450px] w-4/5 items-center justify-center overflow-hidden md:w-3/4 lg:w-9/10">
           <AnimatePresence initial={false} custom={direction} mode="wait">
             <motion.div
               key={activeIndex}
@@ -69,43 +67,37 @@ export function RolesSection() {
               animate="center"
               exit="exit"
               transition={{
-                x: { type: "spring", stiffness: 300, damping: 30 },
-                opacity: { duration: 0.2 },
+                x: { type: "spring", stiffness: 200, damping: 25 },
+                opacity: { duration: 0.3 },
               }}
-              className="absolute flex flex-col items-center justify-center px-8 text-center"
+              className="absolute flex w-full justify-center"
             >
-              <h3 className="mb-6 text-2xl font-medium text-gray-700">
-                {ROLES[activeIndex]}
-              </h3>
-              <button className="bg-rose-pink pointer-events-none rounded-lg px-6 py-2 text-lg font-bold text-white shadow-md transition-colors">
-                Applications closed!
-              </button>
+              <RoleDescCards {...roleData[activeIndex]} />
             </motion.div>
           </AnimatePresence>
         </div>
 
         <button
-          className="text-sea-green transition-transform hover:scale-110 active:scale-90"
+          className="text-sea-green shrink-0 transition-transform hover:scale-110 active:scale-90"
           onClick={() => paginate(1)}
         >
           <ChevronRight size={48} strokeWidth={2.5} />
         </button>
       </div>
 
-      {/* Pagination Dots */}
-      <div className="flex gap-1.5 rounded-lg bg-[#D9D9D9] p-2 md:gap-2">
-        {ROLES.map((_, idx) => (
+      <div className="bg-royal-purple/20 flex gap-1.5 rounded-lg px-2 py-1.5 md:gap-1.5">
+        {roleData.map((_, idx) => (
           <button
             key={idx}
             onClick={() => {
               const dir = idx > activeIndex ? 1 : -1;
               setActiveIndex([idx, dir]);
             }}
-            className="group relative size-1.5 md:h-2 md:w-2"
+            className="group relative size-1.5 md:size-2"
           >
             <motion.div
               animate={{
-                backgroundColor: idx === activeIndex ? "#707070" : "#999999",
+                backgroundColor: idx === activeIndex ? "#A481F5" : "#C0ACE1",
                 scale: idx === activeIndex ? 1.2 : 1,
               }}
               className="h-full w-full rounded-full transition-colors"
