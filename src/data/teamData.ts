@@ -97,13 +97,13 @@ export const teamData: TeamMember[] = [
   },
   {
     id: 1,
-    name: "Ali Baloach",
-    pfp: "/headshots/default_pfp.svg",
+    name: "Ali Raza Baloach",
+    pfp: "/headshots/Ali_Raza_Baloach.png",
     role: "VP Events",
     department: "Events",
     clipboardColor: "bg-bocchi-pink",
     textColor: "text-rose-pink",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/ali-baloach-11666b342/",
   },
   {
     id: 2,
@@ -148,12 +148,12 @@ export const teamData: TeamMember[] = [
   {
     id: 2,
     name: "Liam Young",
-    pfp: "/headshots/default_pfp.svg",
+    pfp: "/headshots/Liam_Young.png",
     role: "Marketing Executive",
     department: "Marketing",
     clipboardColor: "bg-pistachio",
     textColor: "text-sea-green",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/liamyoung-/",
   },
   {
     id: 3,

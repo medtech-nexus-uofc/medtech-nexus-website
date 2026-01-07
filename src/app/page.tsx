@@ -12,7 +12,7 @@ export default function Home() {
             className="pointer-events-none object-contain"
           />
         </div>
-        <p className="w-2/3 pb-10 text-justify text-xl font-semibold text-white md:pb-0 lg:w-4/5 lg:text-3xl">
+        <p className="w-2/3 pb-10 text-justify text-xl font-semibold text-white md:pb-0 lg:w-7/10 lg:text-3xl 2xl:w-1/2">
           A hub for interdisciplinary learning and collaboration to enhance your
           skills while contributing to our community.
         </p>
@@ -50,7 +50,7 @@ export default function Home() {
         </div>
 
         {/* Connect to contentful */}
-        <div className="mb-14 flex w-full flex-col items-center justify-center gap-10 md:mb-16 md:w-4/5 md:flex-row lg:mb-0 lg:w-1/3 lg:flex-col lg:gap-10 xl:mb-0 xl:gap-7">
+        <div className="mb-14 flex w-full flex-col items-center justify-center gap-10 md:mb-16 md:w-4/5 md:flex-row lg:mb-0 lg:w-1/3 lg:flex-col lg:gap-10 xl:mb-0 xl:gap-9.5 2xl:gap-10">
           <div className="bg-lavender flex h-32 w-4/5 flex-row items-center justify-between rounded-2xl px-8 drop-shadow-md md:px-2 lg:px-8">
             <div className="flex flex-col">
               <p className="font-funnel-display text-center text-5xl font-bold text-white">
