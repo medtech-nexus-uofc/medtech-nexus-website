@@ -59,7 +59,7 @@ export const teamData: TeamMember[] = [
     id: 2,
     name: "Paul Hua",
     pfp: "/headshots/default_pfp.svg",
-    role: "Developer",
+    role: "Technology Executive",
     department: "Technology",
     clipboardColor: "bg-pale-blue",
     textColor: "text-deep-ice-blue",
