@@ -27,8 +27,8 @@ export const roleData: RoleProps[] = [
       "The Marketing Team is responsible for creating, designing, and managing social media content - including posts, stories, graphics, and videos to enhance the club’s online presence. They engage with the student community to increase visibility and participation.",
     graphicURL: "/svgs/roles/marketing_team.svg",
     bgColor: "bg-[#D2E9E2]",
-    isOpen: false,
-    formLink: null,
+    isOpen: true,
+    formLink: "https://forms.gle/dr46pCKX1EZiHCAw7",
     note: null,
   },
   {
@@ -47,8 +47,8 @@ export const roleData: RoleProps[] = [
       "The Developer team is responsible for designing, building, and maintaining digital products such as the official MedTech Nexus Website and tools to aid medical research. You will work with a team to continuously evolve digital solutions through agile development practices to follow technical industry standards. ",
     graphicURL: "/svgs/roles/tech_team.svg",
     bgColor: "bg-lavender",
-    isOpen: false,
-    formLink: null,
+    isOpen: true,
+    formLink: "https://forms.gle/ZUSv6sJrdasejL9B8",
     note: null,
   },
 ];
