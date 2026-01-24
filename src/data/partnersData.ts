@@ -20,6 +20,12 @@ export const partnersData: PartnerName[] = [
   },
   {
     id: 3,
+    name: "Children's Cottage Society",
+    logo: "/images/logos/childrensCottageSociety_logo.png",
+    link: "https://childrenscottage.ab.ca/",
+  },
+  {
+    id: 4,
     name: "The Studying Edit",
     logo: "/images/logos/theStudyingEdit_logo.png",
     link: "https://www.thestudyingedit.com/",
