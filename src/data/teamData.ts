@@ -97,13 +97,13 @@ export const teamData: TeamMember[] = [
   },
   {
     id: 1,
-    name: "Ali Raza Baloach",
-    pfp: "/headshots/Ali_Raza_Baloach.png",
-    role: "Events Executive",
+    name: "Davin Leung",
+    pfp: "/headshots/Davin_Leung.png",
+    role: "VP Events",
     department: "Events",
     clipboardColor: "bg-bocchi-pink",
     textColor: "text-rose-pink",
-    linkedin: "https://www.linkedin.com/in/ali-baloach-11666b342/",
+    linkedin: "",
   },
   {
     id: 2,
