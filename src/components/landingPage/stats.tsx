@@ -6,7 +6,7 @@ export default function Stats() {
       <div className="bg-lavender flex h-32 w-4/5 flex-row items-center justify-between rounded-2xl px-8 drop-shadow-md md:px-2 lg:px-8">
         <div className="flex flex-col">
           <p className="font-funnel-display text-center text-5xl font-bold text-white">
-            43
+            50
           </p>
           <p className="font-funnel-display text-xl font-bold text-white md:text-lg lg:text-2xl">
             Members
@@ -24,7 +24,7 @@ export default function Stats() {
       <div className="bg-lavender flex h-32 w-4/5 flex-row items-center justify-between rounded-2xl px-8 drop-shadow-md md:px-2 lg:px-8">
         <div className="flex flex-col">
           <p className="font-funnel-display text-center text-5xl font-bold text-white">
-            1
+            6
           </p>
           <p className="font-funnel-display text-xl font-bold text-white md:text-lg lg:text-2xl">
             Events
@@ -42,7 +42,7 @@ export default function Stats() {
       <div className="bg-lavender flex h-32 w-4/5 flex-row items-center justify-between rounded-2xl px-8 drop-shadow-md md:px-2 lg:px-8">
         <div className="flex flex-col">
           <p className="font-funnel-display text-5xl font-bold text-white">
-            45
+            30
           </p>
           <p className="font-funnel-display mr-3 text-xl font-bold text-white md:text-lg lg:text-2xl">
             Event Attendees

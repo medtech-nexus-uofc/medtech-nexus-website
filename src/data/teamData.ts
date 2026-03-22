@@ -136,6 +136,16 @@ export const teamData: TeamMember[] = [
     linkedin: "",
   },
   {
+    id: 5,
+    name: "Priyanshu Giri",
+    pfp: "/headshots/Priyanshu_Giri.svg",
+    role: "Events Executive",
+    department: "Events",
+    clipboardColor: "bg-bocchi-pink",
+    textColor: "text-rose-pink",
+    linkedin: "",
+  },
+  {
     id: 1,
     name: "Alexander Chen",
     pfp: "/headshots/Alexander_Chen.png",
@@ -148,7 +158,7 @@ export const teamData: TeamMember[] = [
   {
     id: 2,
     name: "Michael Tran",
-    pfp: "",
+    pfp: "/headshots/Michael_Tran.png",
     role: "Jr VP Marketing",
     department: "Marketing",
     clipboardColor: "bg-pistachio",
@@ -158,7 +168,7 @@ export const teamData: TeamMember[] = [
   {
     id: 3,
     name: "Tobi Oyedokun",
-    pfp: "",
+    pfp: "/headshots/Tobi_Oyedokun.png",
     role: "Jr VP Marketing",
     department: "Marketing",
     clipboardColor: "bg-pistachio",
